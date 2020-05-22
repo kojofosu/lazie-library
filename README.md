@@ -15,5 +15,5 @@ buildscript {
 Add the library to the dependencies:
 
 ```gradle
-implementation 'implementation 'com.github.kojofosu:Lazie-library:1.0.0'
+implementation 'com.github.kojofosu:Lazie-library:1.0.0'
 ```
