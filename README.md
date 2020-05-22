@@ -1,5 +1,6 @@
 [![Release](https://jitpack.io/v/User/Repo.svg)]
 (https://jitpack.io/#User/Repo)
+[![](https://jitpack.io/v/kojofosu/Lazie-library.svg)](https://jitpack.io/#kojofosu/Lazie-library)
 
 ### Gradle
 
@@ -8,7 +9,8 @@ Make sure that the repositories section includes JCenter
 buildscript {
     ...
     repositories {
-        jitpack()
+                jcenter()
+                maven { url "https://jitpack.io" }
         ...
     }
 ```
