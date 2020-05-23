@@ -1,25 +1,18 @@
 package com.mcdev.lazielibrary;
 
 import android.app.Activity;
-import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreen{
 
     private Activity activity;
 
-    public SplashScreen() {
-    }
 
     public SplashScreen(Activity activity) {
         this.activity = activity;
@@ -106,8 +99,8 @@ public class SplashScreen{
     }
 
     public void setActivityBackgroundColor(int color) {
-        RelativeLayout splashRelativeLayout = activity.findViewById(R.id.splash_rel_lay);
-        splashRelativeLayout.setBackgroundColor(color);
+        RelativeLayout splashRelativeLayout = activity.findViewById(R.id.splash_rel_lay);;
+        splashRelativeLayout.setBackgroundResource(color);      //using background resource because the background color was giving me issues
     }
 
     public void setActivityBackgroundDrawable(Drawable drawable) {

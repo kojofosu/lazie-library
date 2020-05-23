@@ -19,6 +19,7 @@ Add the library to the dependencies:
 ```
 
 ### Setting timer for your custom splash view
+#### add these in your activity's  `onCreate()`
 ```java
     Splashie.splash(ACTIVITY.this, TARGET_CLASS.class, DURATION_IN_SECONDS);
 ```
@@ -35,5 +36,5 @@ Add the library to the dependencies:
     SplashScreen splashScreen = new SplashScreen(ACTIVITY.this);       //initiating splashscreen or splash view
     splashScreen.createSimpleSplashScreen(R.mipmap.lakes, R.string.title, R.string.message);       //creating splashscreen
     splashScreen.setActivityBackgroundColor(R.color.colorPrimaryDark);             //changing background color for splashscreen
-    Splashie.splash(ACTIVITY.this, TARGET_CLASS.class, DURATION_IN_SECONDS);       //setting duration for splash screen
+    Splashie.splash(ACTIVITY.this, TARGET_CLASS.class, 4);       //setting duration for splash screen
 ```

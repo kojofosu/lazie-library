@@ -13,8 +13,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         SplashScreen splashScreen = new SplashScreen(MainActivity.this);
+        splashScreen.setActivityBackgroundColor(R.color.colorPrimary);
         splashScreen.createSimpleSplashScreen(R.mipmap.lakes);
-        splashScreen.setActivityBackgroundColor(R.color.colorPrimaryDark);
+
         Splashie.splash(MainActivity.this, Main2Activity.class,4);
     }
 }
