@@ -2,8 +2,11 @@ package com.mcdev.lazielibrary;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
+
+import java.util.Objects;
 
 public class Splashie {
 
@@ -19,8 +22,9 @@ public class Splashie {
             public void run (){
                 try{
                     sleep(durationInMilliseconds);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                } catch (final InterruptedException e) {
+                    Log.e(e.getMessage(), Objects.requireNonNull(e.getMessage()));
+                    Thread.currentThread().interrupt();
                 }
                 finally {
                     activity.startActivity(i);

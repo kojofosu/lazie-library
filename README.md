@@ -17,9 +17,9 @@ Add the library to the dependencies:
 ```groovy
     implementation 'com.github.kojofosu:Lazie-library:${latest-version}'
 ```
+## Add these in your activity's  `onCreate()`
 
 ### Setting timer for your custom splash view
-#### add these in your activity's  `onCreate()`
 ```java
     Splashie.splash(ACTIVITY.this, TARGET_CLASS.class, DURATION_IN_SECONDS);
 ```
