@@ -20,6 +20,11 @@ public class SplashScreen{
         activity.setContentView(R.layout.activity_splash);
     }
 
+    public TextView textVie0 (){
+
+        return new TextView(activity);
+    }
+
     public void createSimpleSplashScreen( int drawable) {
         /*Logo image view*/
         ImageView imageView = activity.findViewById(R.id.splash_iv);
