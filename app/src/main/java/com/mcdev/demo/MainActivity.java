@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_main);
         SplashScreen splashScreen = new SplashScreen(MainActivity.this);
         splashScreen.setActivityBackgroundColor(R.color.colorPrimary);
         splashScreen.createSimpleSplashScreen(R.mipmap.lakes);
