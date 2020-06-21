@@ -6,17 +6,24 @@ import android.content.Context;
 import android.widget.Toast;
 
 public class Copie {
-//    public static void copy(Context context, String label, String textToCopy){
-//        ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
-//        ClipData clipData = ClipData.newPlainText(label, textToCopy);
-//        assert clipboard != null;
-//        clipboard.setPrimaryClip(clipData);
-//
-//        String message;
-//        toast(context , label);
-//
-//        public copy();
-//    }
+
+
+    public static void copyWithToast(Context context, String label, String textToCopy, String toastMessage){
+        ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+        ClipData clipData = ClipData.newPlainText(label, textToCopy);
+        assert clipboard != null;
+        clipboard.setPrimaryClip(clipData);
+
+        /*toast*/
+        Toast.makeText(context, toastMessage, Toast.LENGTH_SHORT).show();
+    }
+
+    public static void copy(Context context, String label, String textToCopy){
+        ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+        ClipData clipData = ClipData.newPlainText(label, textToCopy);
+        assert clipboard != null;
+        clipboard.setPrimaryClip(clipData);
+    }
 
     public static class Builder{
         private Context context;
@@ -53,7 +60,9 @@ public class Copie {
             }
         }
     }
-//    private static void toast(Context context, String toastMessage) {
-//        Toast.makeText(context, "copied", Toast.LENGTH_SHORT).show();
-//    }
+
+    /*copy with toast*/
+    private static void toast(Context context, String toastMessage) {
+        Toast.makeText(context, "copied", Toast.LENGTH_SHORT).show();
+    }
 }

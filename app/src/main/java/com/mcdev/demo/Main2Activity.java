@@ -21,10 +21,12 @@ public class Main2Activity extends AppCompatActivity {
         textView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                new Copie.Builder(getApplicationContext())
-                        .copy("text", textView.getText().toString())
-                        .makeToast("Copied.")
-                        .build();
+//                new Copie.Builder(getApplicationContext())
+//                        .copy("text", textView.getText().toString())
+//                        .makeToast("Copied.")
+//                        .build();
+
+                Copie.copyWithToast(getApplicationContext(), "label", textView.getText().toString(), "Has been copied");
                 return true;
             }
         });
