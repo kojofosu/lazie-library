@@ -2,6 +2,10 @@ package com.mcdev.demo;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+import com.mcdev.lazielibrary.Copie;
 import com.mcdev.lazielibrary.SplashScreen;
 import com.mcdev.lazielibrary.Splashie;
 
@@ -17,5 +21,7 @@ public class MainActivity extends AppCompatActivity {
         splashScreen.createSimpleSplashScreen(R.mipmap.lakes);
 
         Splashie.splash(MainActivity.this, Main2Activity.class,4);
+
+
     }
 }
